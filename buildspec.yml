@@ -4,22 +4,25 @@ phases:
   install:
     commands:
       #- python -m pip3 install Flask
-      - python3.7 -m pip install Flask
+      #- python3.7 -m pip install Flask
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the Python code...
-      - python test_app.py
+      #- python test_app.py
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - web.py
+    - 
+    #- web.py
     - appspec.yml
-    - templates/layout.html
-    - templates/test.html
-    - scripts/mkdir.sh
-    - scripts/start_flask.sh
-    - scripts/stop_flask1.sh
-    - scripts/stop_flask.py
+    - index.html
+    - styles.css
+    #- templates/layout.html
+    #- templates/test.html
+    #- scripts/mkdir.sh
+    #- scripts/start_flask.sh
+    #- scripts/stop_flask1.sh
+    #- scripts/stop_flask.py
