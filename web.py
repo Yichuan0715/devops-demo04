@@ -18,7 +18,7 @@ myapp = Flask(__name__)
 @myapp.route('/shutdown', methods=['POST'])
 def shutdown():
     shutdown_server()
-    return 'Server shutting down...'
+    return 'Server shutting down111...'
 
 
 @myapp.route("/")
